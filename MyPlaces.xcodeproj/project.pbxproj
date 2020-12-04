@@ -13,6 +13,7 @@
 		FE34C15B25703B3400EF1CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE34C15925703B3400EF1CA3 /* LaunchScreen.storyboard */; };
 		FE8C70F4257A84240029DE12 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70F3257A84240029DE12 /* MainViewController.swift */; };
 		FE8C70FB257AAB6F0029DE12 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */; };
+		FE8C70FE257AB2D40029DE12 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FE34C15C25703B3400EF1CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8C70F3257A84240029DE12 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				FE34C14E25703B3200EF1CA3 /* AppDelegate.swift */,
 				FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */,
 				FE8C70F3257A84240029DE12 /* MainViewController.swift */,
+				FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */,
 				FE34C15425703B3200EF1CA3 /* Main.storyboard */,
 				FE34C15725703B3400EF1CA3 /* Assets.xcassets */,
 				FE34C15925703B3400EF1CA3 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE8C70FB257AAB6F0029DE12 /* CustomTableViewCell.swift in Sources */,
+				FE8C70FE257AB2D40029DE12 /* PlaceModel.swift in Sources */,
 				FE34C14F25703B3200EF1CA3 /* AppDelegate.swift in Sources */,
 				FE8C70F4257A84240029DE12 /* MainViewController.swift in Sources */,
 			);
