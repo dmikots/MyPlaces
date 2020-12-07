@@ -14,6 +14,7 @@
 		FE8C70F4257A84240029DE12 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70F3257A84240029DE12 /* MainViewController.swift */; };
 		FE8C70FB257AAB6F0029DE12 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */; };
 		FE8C70FE257AB2D40029DE12 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */; };
+		FE8C7101257E83A20029DE12 /* NewPlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C7100257E83A20029DE12 /* NewPlaceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FE8C70F3257A84240029DE12 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		FE8C7100257E83A20029DE12 /* NewPlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				FE34C14E25703B3200EF1CA3 /* AppDelegate.swift */,
 				FE8C70FA257AAB6F0029DE12 /* CustomTableViewCell.swift */,
 				FE8C70F3257A84240029DE12 /* MainViewController.swift */,
+				FE8C7100257E83A20029DE12 /* NewPlaceTableViewController.swift */,
 				FE8C70FD257AB2D40029DE12 /* PlaceModel.swift */,
 				FE34C15425703B3200EF1CA3 /* Main.storyboard */,
 				FE34C15725703B3400EF1CA3 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				FE8C70FE257AB2D40029DE12 /* PlaceModel.swift in Sources */,
 				FE34C14F25703B3200EF1CA3 /* AppDelegate.swift in Sources */,
 				FE8C70F4257A84240029DE12 /* MainViewController.swift in Sources */,
+				FE8C7101257E83A20029DE12 /* NewPlaceTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
