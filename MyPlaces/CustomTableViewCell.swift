@@ -2,16 +2,18 @@
 //  CustomTableViewCell.swift
 //  MyPlaces
 //
-//  Created by Р71 on 04.12.2020.
+//  Created by Alexey Efimov on 14/11/2018.
+//  Copyright © 2018 Alexey Efimov. All rights reserved.
 //
 
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet var imageOfPlace: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
     
-    @IBOutlet weak var typeLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var imageOfPlace: UIImageView!
+
 }
