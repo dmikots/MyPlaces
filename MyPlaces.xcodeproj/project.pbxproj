@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895AEDA21934D16006ACC1B /* MainViewController.swift */; };
 		A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */; };
 		A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */; };
+		A8F146FE2212926C000E7D78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F146FD2212926C000E7D78 /* MapKit.framework */; };
+		A8F14700221293C1000E7D78 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F146FF221293C1000E7D78 /* MapViewController.swift */; };
+		A8F37E5E22002F9700C40214 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F37E5D22002F9700C40214 /* RatingControl.swift */; };
 		A8F6604A21BA599700C724FD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F6604921BA599700C724FD /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		A895AEDA21934D16006ACC1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		A8F146FD2212926C000E7D78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A8F146FF221293C1000E7D78 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A8F37E5D22002F9700C40214 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		A8F6604921BA599700C724FD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F146FE2212926C000E7D78 /* MapKit.framework in Frameworks */,
 				8B9DAF42F91ECB0D47E8A3DB /* Pods_MyPlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +58,7 @@
 		A3E62A2428117415D511FF13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8F146FD2212926C000E7D78 /* MapKit.framework */,
 				733859ED947291EC14E99950 /* Pods_MyPlaces.framework */,
 			);
 			name = Frameworks;
@@ -80,9 +88,11 @@
 				A895AEC821934CA7006ACC1B /* AppDelegate.swift */,
 				A895AEDA21934D16006ACC1B /* MainViewController.swift */,
 				A82E5BE421A5315800BD5158 /* NewPlaceViewController.swift */,
+				A8F146FF221293C1000E7D78 /* MapViewController.swift */,
 				A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */,
 				A8F6604921BA599700C724FD /* StorageManager.swift */,
 				A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */,
+				A8F37E5D22002F9700C40214 /* RatingControl.swift */,
 				A895AECC21934CA7006ACC1B /* Main.storyboard */,
 				A895AECF21934CA8006ACC1B /* Assets.xcassets */,
 				A895AED121934CA8006ACC1B /* LaunchScreen.storyboard */,
@@ -129,12 +139,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Alexey Efimov";
 				TargetAttributes = {
 					A895AEC421934CA7006ACC1B = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -212,12 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F37E5E22002F9700C40214 /* RatingControl.swift in Sources */,
 				A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */,
 				A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */,
 				A82E5BE521A5315800BD5158 /* NewPlaceViewController.swift in Sources */,
 				A8F6604A21BA599700C724FD /* StorageManager.swift in Sources */,
 				A895AEC921934CA7006ACC1B /* AppDelegate.swift in Sources */,
 				A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */,
+				A8F14700221293C1000E7D78 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
