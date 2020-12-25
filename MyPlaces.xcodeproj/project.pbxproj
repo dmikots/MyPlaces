@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A895AEDA21934D16006ACC1B /* MainViewController.swift */; };
 		A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */; };
 		A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */; };
+		A8E81AC22237894B000A4C5F /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E81AC12237894B000A4C5F /* MapManager.swift */; };
 		A8F146FE2212926C000E7D78 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F146FD2212926C000E7D78 /* MapKit.framework */; };
 		A8F14700221293C1000E7D78 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F146FF221293C1000E7D78 /* MapViewController.swift */; };
 		A8F37E5E22002F9700C40214 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F37E5D22002F9700C40214 /* RatingControl.swift */; };
@@ -36,6 +37,7 @@
 		A895AEDA21934D16006ACC1B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		A8E81AC12237894B000A4C5F /* MapManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		A8F146FD2212926C000E7D78 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A8F146FF221293C1000E7D78 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A8F37E5D22002F9700C40214 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
@@ -85,20 +87,61 @@
 		A895AEC721934CA7006ACC1B /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				A895AEC821934CA7006ACC1B /* AppDelegate.swift */,
+				A8E81AC32237B864000A4C5F /* ViewControllers */,
+				A8E81AC82237BA0F000A4C5F /* Helpers */,
+				A8E81AC42237B8A5000A4C5F /* Models */,
+				A8E81AC92237BA36000A4C5F /* Support Files */,
+				A8E81ACA2237BA55000A4C5F /* IBuilder */,
+			);
+			path = MyPlaces;
+			sourceTree = "<group>";
+		};
+		A8E81AC32237B864000A4C5F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				A895AEDA21934D16006ACC1B /* MainViewController.swift */,
 				A82E5BE421A5315800BD5158 /* NewPlaceViewController.swift */,
 				A8F146FF221293C1000E7D78 /* MapViewController.swift */,
-				A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */,
-				A8F6604921BA599700C724FD /* StorageManager.swift */,
 				A8DB681F219BDB0700CD36D5 /* CustomTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A8E81AC42237B8A5000A4C5F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A8DB6864219DA4BE00CD36D5 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A8E81AC82237BA0F000A4C5F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A8E81AC12237894B000A4C5F /* MapManager.swift */,
+				A8F6604921BA599700C724FD /* StorageManager.swift */,
 				A8F37E5D22002F9700C40214 /* RatingControl.swift */,
-				A895AECC21934CA7006ACC1B /* Main.storyboard */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A8E81AC92237BA36000A4C5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				A895AECF21934CA8006ACC1B /* Assets.xcassets */,
-				A895AED121934CA8006ACC1B /* LaunchScreen.storyboard */,
+				A895AEC821934CA7006ACC1B /* AppDelegate.swift */,
 				A895AED421934CA8006ACC1B /* Info.plist */,
 			);
-			path = MyPlaces;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		A8E81ACA2237BA55000A4C5F /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A895AED121934CA8006ACC1B /* LaunchScreen.storyboard */,
+				A895AECC21934CA7006ACC1B /* Main.storyboard */,
+			);
+			path = IBuilder;
 			sourceTree = "<group>";
 		};
 		C0C40E14B0726AF0C70AAEB3 /* Pods */ = {
@@ -208,16 +251,21 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPlaces/Pods-MyPlaces-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -231,6 +279,7 @@
 				A8DB6820219BDB0700CD36D5 /* CustomTableViewCell.swift in Sources */,
 				A8DB6865219DA4BE00CD36D5 /* PlaceModel.swift in Sources */,
 				A82E5BE521A5315800BD5158 /* NewPlaceViewController.swift in Sources */,
+				A8E81AC22237894B000A4C5F /* MapManager.swift in Sources */,
 				A8F6604A21BA599700C724FD /* StorageManager.swift in Sources */,
 				A895AEC921934CA7006ACC1B /* AppDelegate.swift in Sources */,
 				A895AEDB21934D16006ACC1B /* MainViewController.swift in Sources */,
@@ -385,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H969S6YFE;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,7 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H969S6YFE;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
